@@ -1,7 +1,10 @@
 {
     "name": "laravel/laravel",
     "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
     "license": "MIT",
     "type": "project",
     "require": {
@@ -18,9 +21,11 @@
         "laravel/tinker": "^1.0",
         "laravelcollective/html": "^5.4",
         "league/flysystem-aws-s3-v3": "^1.0",
+        "nwidart/laravel-modules": "^5.0",
         "patrickschur/language-detection": "^3.2",
         "php-imap/php-imap": "^2.0",
-        "predis/predis": "^1.1"
+        "predis/predis": "^1.1",
+        "tcg/voyager": "^1.2"
     },
     "require-dev": {
         "mockery/mockery": "^1.2",
@@ -65,5 +70,11 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "optimize-autoloader": true
+    },
+    "repositories": {
+        "hooks": {
+            "type": "composer",
+            "url": "https://larapack.io"
+        }
     }
 }
