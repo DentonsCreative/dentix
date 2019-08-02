@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Hash;
 use App\User;
+// use Log;
 use BadChoice\Thrust\Controllers\ThrustController;
 
 class UsersController extends Controller

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b8148d4b63415bd43ab7375963a38325",
+    "content-hash": "98ce22d2e78b2bcae81284677d97a1c7",
     "packages": [
         {
             "name": "arrilot/laravel-widgets",
@@ -5588,8 +5588,8 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "lead"
+                    "role": "lead",
+                    "email": "sebastian@phpunit.de"
                 }
             ],
             "description": "Utility class for timing",

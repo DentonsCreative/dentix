@@ -1,8 +1,10 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+// New migration to amalgamate the Voyager & Handesk settings tables
 
 class CreateSettingsTable extends Migration
 {
@@ -15,6 +17,12 @@ class CreateSettingsTable extends Migration
     {
         Schema::create('settings', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('key')->unique();
+            $table->string('display_name');
+            $table->text('value');
+            $table->text('details')->nullable()->default(null);
+            $table->string('type');
+            $table->integer('order')->default('1');
             $table->string('slack_webhook_url')->nullable();
             $table->timestamps();
         });
