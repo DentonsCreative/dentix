@@ -28,8 +28,34 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
-        Gate::define('see-admin', function ($user) {
-            return $user->admin;
-        });
+// Fix auth for switch to Voyager for user management? (in progress):
+// https://github.com/the-control-group/voyager/issues/3527#issuecomment-456096198
+//         $user = Auth::user();
+//      
+//         if (! app()->runningInConsole()) {
+//             $roles = Role::with('permission')->get();
+// 
+//             foreach ($roles as $role) {
+//                 foreach ($role->permission as $permission) {
+// 
+//                     $permissionArray[$permission->title][] = $role->id;
+//                 }
+//             }
+// 
+//             foreach ($permissionArray as $title => $roles) {
+//                 Gate::define($title, function (User $user) use ($roles) {
+//                     return count(array_intersect($user->role->pluck('id')->toArray(), $roles));
+//                 });
+//             }
+//         }
+// 
+
+//  This was the original auth gate for user admin:
+//         Gate::define('see-admin', function ($user) {
+//             return $user->admin;
+//         });
+
+// This is the amended auth gate for user admin:
+        Gate::define('see-admin', 'App\Policies\UserPolicy@view');
     }
 }

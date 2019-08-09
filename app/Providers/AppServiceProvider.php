@@ -10,6 +10,9 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Validator;
 
+use Illuminate\Events\Dispatcher;
+use TCG\Voyager\Facades\Voyager;
+
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -37,6 +40,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
+		// Add override for voyager user model
+//         Voyager::useModel('User', \App\User::class);
+        
         app()->bind(IssueCreator::class, Bitbucket::class);
 
         Blade::directive('icon', function ($icon) {
