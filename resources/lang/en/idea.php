@@ -11,11 +11,11 @@ return [
     'currentImpact'     => 'Current Impact',
     'edit'              => 'Edit',
     'fromTicket'        => 'Notification | Ideas bucket:
-Your ticket has been closed as an issue, and it has been created as an idea into our Ideas bucket.
+Your ticket has been closed as an issue, and subsequently been recreated as an idea for our Ideas bucket.
 
-All the ideas will be analized by our team, and evaluated its viability.
+All ideas will be analized by our team, and evaluated as to their viability.
 
-Thank you to let us grow with you..',
+Thank you for helping us to grow and improve along with you..',
     'save'     => 'Save',
     'new'      => 'New',
     'open'     => 'Open',
