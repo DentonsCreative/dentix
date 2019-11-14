@@ -56,8 +56,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@handesk.io'),
-        'name'    => env('MAIL_FROM_NAME', 'Handesk'),
+        'address' => env('MAIL_FROM_ADDRESS', 'support@dentix.intra-dev.dentonscreative.com'),
+        'name'    => env('MAIL_FROM_NAME', 'Dentix'),
     ],
 
     /*

@@ -1,3 +1,6 @@
+# Dentix
+Our adapted fork of the Handesk repo by BadChoice.
+
 ### Handesk
 
 ## Description

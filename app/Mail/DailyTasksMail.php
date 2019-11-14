@@ -24,7 +24,7 @@ class DailyTasksMail extends Mailable
      */
     public function build()
     {
-        return $this->subject('Handesk: Daily tasks')
+        return $this->subject('Dentix: Daily tasks')
                     ->view('emails.tasks')
                     ->with(['tasks' => $this->tasks]);
     }

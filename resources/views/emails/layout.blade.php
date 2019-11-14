@@ -15,7 +15,7 @@
     @yield('body')
 
     <div style="margin-top:40px">
-        Powered by <a href="https://github.com/BadChoice/handesk"><img src="https://raw.githubusercontent.com/BadChoice/handesk/dev/public/images/handesk_full.png" height="30" align="center"></a>
+        Powered by <a href="https://github.com/DentonsCreative/dentix"><img src="https://raw.githubusercontent.com/DentonsCreative/dentix/dentix/public/images/dentix_logo_white_small.png" height="30" align="center"></a>
     </div>
 
 </body>
